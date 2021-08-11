@@ -23,4 +23,3 @@ python -m ipykernel install --user --name=env
 ```
 4. Go through the notebooks
    
-   
