@@ -8,18 +8,28 @@ On this repository there is the necessary files to create a custom object detect
 4. TF Lite Converter - Notebook to convert the model to TFLite
 
 ## How to install?
+
 1. Clone the repo
+
 ```bash
 git clone https://github.com/JPCLima/TensorFlow-Object-Detection.git
 ```
+
 2. Create a virtual env
+
 ```
 python -m venv env
 ```
-3. Install kernel for the notebook (name is the the virtual environment)
+
+3. Activate virtual env
+
+```
+env\Scripts\activate
+```
+
+4. Install kernel and notebook (name is the the virtual environment)
+
 ```bash
-pip install ipykernel
+pip install ipykernel notebook
 python -m ipykernel install --user --name=env
 ```
-4. Go through the notebooks
-   
