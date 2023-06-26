@@ -1,35 +1,49 @@
 # TensorFlow-Object-Detection
 
-On this repository there is the necessary files to create a custom object detection with TensorFlow Object Detection.
+This repository contains the necessary files to create a custom object detection model using TensorFlow Object Detection.
 
-1. Image Preprocessing - place to prepere the data to be trained
-2. Training Model - place where the model will be trained (can be on the local machine or the fastes way on Google Colab)
-3. Detections - Using OpenCv and Tensorflow object detections its possible to have a live detection of the objects.
-4. TF Lite Converter - Notebook to convert the model to TFLite
+## Image Preprocessing
 
-## How to install?
+The "Image Preprocessing" section provides a notebook for preparing the data to be trained. The steps involved in the image preprocessing are as follows:
 
-1. Clone the repo
+1. Setup Project
+2. TFOD Utils & Google Images Downloader
+3. Collect Images
+4. Image Labeling
+5. Split into Train and Test
 
-```bash
-git clone https://github.com/JPCLima/TensorFlow-Object-Detection.git
-```
+## Training Model
 
-2. Create a virtual env
+The "Training Model" section focuses on training the object detection model. The model can be trained either on a local machine or using Google Colab for faster processing. The steps involved in creating and evaluating the model are:
 
-```
-python -m venv env
-```
+1. Setup
+2. Train the Model
+3. Evaluate the Model
+4. Freezing the Graph
 
-3. Activate virtual env
+## Detections
 
-```
-env\Scripts\activate
-```
+The "Detections" section demonstrates how to perform real-time object detections using OpenCV and TensorFlow object detection. The steps involved are:
 
-4. Install kernel and notebook (name is the the virtual environment)
+1. Load the Model
+2. Real-Time Detections
+3. Images Detections
 
-```bash
-pip install ipykernel notebook
-python -m ipykernel install --user --name=env
-```
+## TF Lite Converter
+
+The "TF Lite Converter" section provides a notebook to convert the trained model to the TensorFlow Lite format. The steps involved are:
+
+1. Freezing Graph
+2. Convert to TF Lite
+3. Convert to TensorFlow.js
+
+Please refer to the respective notebooks and sections for detailed instructions on each step of the object detection process using TensorFlow.
+
+## Screenshoots
+
+Example of real-time detection on the Pepsi and Coca-Cola cans:
+
+![](assets/Screenshot.png)
+
+The screenshot showcases the object detection model in action, accurately detecting and labeling Pepsi and Coca-Cola cans in a live video feed. Please note that the performance and accuracy of the model may vary depending on the specific use case and environmental conditions.
+
